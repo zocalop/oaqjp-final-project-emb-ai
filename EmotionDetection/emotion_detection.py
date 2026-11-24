@@ -15,7 +15,7 @@ def emotion_detector(text_to_analyze):
         fear = formatted_response['emotionPredictions'][0]['emotion']['fear']
         joy = formatted_response['emotionPredictions'][0]['emotion']['joy']
         sadness = formatted_response['emotionPredictions'][0]['emotion']['sadness']
-    elif response.status_code == 404:
+    elif response.status_code == 400:
         anger = None
         disgust = None
         fear = None
